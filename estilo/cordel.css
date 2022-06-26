@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    min-height: 100vh;    
+    background-color: lightgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-image: linear-gradient(to right, black, rgb(4, 24, 44));
+    color: white;    
+    text-align: center;     
+}
+
+header > h1{        
+    padding-top: 50px;    
+    font-size: 10vw;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+}
+
+header > p{ 
+    font-size: 1.5em;
+    padding-bottom: 85px;     
+   
+    
+}
+
+header a, footer a{
+    color: white;
+    padding: 5px;    
+    text-decoration: none;
+    font-weight: bolder;
+        
+}
+header a:hover, footer a:hover{
+    text-decoration:overline underline; 
+    color: wheat
+        
+}
+
+header a:after{
+    content: '\00A\1F517';
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;     
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{    
+    background-color: wheat;
+    
+}
+
+section.imagem{
+    background-color: rgb(50, 50, 50);
+    color: white; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.596);
+    background-size: cover;
+    background-attachment: fixed;   
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 10px; 
+    text-shadow: 1px 1px 0px black;
+    border-radius: 10px;   
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+           
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+   
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
